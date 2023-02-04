@@ -6,7 +6,7 @@
 
 
 arr = [0] * 10
-n = map(int, input())
+n = input()
  
 for i in range(len(n)) :
     num = int(n[i])
