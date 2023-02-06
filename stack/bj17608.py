@@ -8,12 +8,10 @@ count = 1
 
 for i in range(1, n) :
     last = stack.pop()
-
     if last > before :
         count += 1
         before = last
 
 print(count)
-
 
 
