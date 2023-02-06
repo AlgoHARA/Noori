@@ -3,8 +3,6 @@
 import sys
 
 n = int(input())
-
-# 후위표기식 값을 받는다
 postfix = input()
 
 # 대문자 값에 들어갈 숫자(피연산자)를 받는다
@@ -22,19 +20,15 @@ for i in postfix :
         op1 = stack.pop()
 
         if i == '+' :
-            #stack[op1 + op2]
             stack.append(op1 + op2)
 
         elif i == '-' :
-            # stack[op2 - op1]
             stack.append(op1 - op2)
 
         elif i == '/' :
-            # stack[op2 % op1]
             stack.append(op1 / op2)
 
         elif i == '*' :
-            # stack[op2 * op1]
             stack.append(op1 * op2)
 
 # 소수점 3번째에서 반올림해서 2번째 자릿수까지만 출력하겠다.
