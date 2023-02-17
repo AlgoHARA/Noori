@@ -6,6 +6,7 @@ n, m = map(int, input().split())
 
 floor = []
 
+
 # 행렬 받기
 for _ in range(n) : 
     floor.append(list(input()))
