@@ -15,18 +15,20 @@ count = 0
 
 # '-' 탐색
 for i in range(n) :
-    pre = "/"
+    pre = " "
     for j in range(m) :
         if floor[i][j] == "-" :
-            if floor[i][j] != pre : count += 1
+            if floor[i][j] != pre : 
+                count += 1
         pre = floor[i][j]
 
 # '|' 탐색
 for j in range(m) :
-    pre = "/"
+    pre = " "
     for i in range(n) :
         if floor[i][j] == "|" :
-            if floor[i][j] != pre : count += 1
+            if floor[i][j] != pre : 
+                count += 1
         pre = floor[i][j]
 
 # 갯수 출력
